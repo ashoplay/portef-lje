@@ -1,36 +1,92 @@
-ul {
+/* main.css */
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 20px;
     background-color: #7091e6;
     display: flex;
     justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
-li a {
+nav li a {
     display: block;
-    color: #000;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
     text-align: center;
     flex-grow: 1;
     font-size: large;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #8697ca;
-    color: white;
 }
 
-
-html, body {
-    margin: 0;
-    background-color: #adbbda;
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    margin: 40px auto; /* Added vertical margins for space around */
+    width: 90%;  /* Make it slightly narrower than the full width */
+    max-width: 1000px;  /* Set a max-width to control how wide it gets */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 p {
+    font-size: 24px;
+    color: #333;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #7091e6;
+    border-radius: 5px;
+    color: #333;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #1039a1;
+    color: white;
+}
+
+footer {
+    background-color: #7091e6;
+    color: white;
     text-align: center;
-    font-size: large;
+    padding: 5px 0;  /* Significantly reduced padding */
+    margin-top: auto;
+    border-top: 1px solid #8697ca;  /* Thinner border */
+    font-size: 12px;  /* Smaller font size */
 }
