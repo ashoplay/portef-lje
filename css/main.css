@@ -52,9 +52,9 @@ nav li a:hover {
     padding: 20px;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
-    margin: 40px auto; /* Added vertical margins for space around */
-    width: 90%;  /* Make it slightly narrower than the full width */
-    max-width: 1000px;  /* Set a max-width to control how wide it gets */
+    margin: 40px auto; 
+    width: 90%; 
+    max-width: 1000px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -85,8 +85,8 @@ footer {
     background-color: #7091e6;
     color: white;
     text-align: center;
-    padding: 5px 0;  /* Significantly reduced padding */
+    padding: 5px 0; 
     margin-top: auto;
-    border-top: 1px solid #8697ca;  /* Thinner border */
-    font-size: 12px;  /* Smaller font size */
+    border-top: 1px solid #8697ca;  
+    font-size: 12px;  
 }
