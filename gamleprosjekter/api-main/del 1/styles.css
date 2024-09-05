@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.change-location {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.change-location label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.change-location input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.icon {
+    text-align: center;
+    padding: 10px;
+}
+
+.details {
+    padding: 10px;
+}
+.card img.time {
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    text-align: center; 
+}
+
+.icon img {
+    display: inline-block; 
+    vertical-align: middle; 
+    width: 70px;
+    height: 70px;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .icon img {
+        display: inline-block; 
+        vertical-align: middle; 
+        width: 50px;
+        height: 50px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .change-location input[type="text"] {
+        width: calc(100% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .change-location input[type="text"] {
+        width: calc(100% - 15px);
+        font-size: 14px;
+    }
+    .icon img {
+        display: inline-block; 
+        vertical-align: middle; 
+        width: 50px;
+        height: 50px;
+    }
+}
