@@ -39,6 +39,68 @@ function changeGradient() {
         ['#4ca1af', '#c4e0e5', '#fbd3e9'], // Teal to light blue to pastel pink
         ['#4568dc', '#b06ab3', '#f93b7a'], // Blue to violet to magenta
         ['#189bcc', 'pink', '#300adc'], // Blue to violet to magenta
+        ['#ff0099', '#493240', '#f5a623'], // Pink to dark brown to orange
+        ['#f5f7f9', '#c3cfe2', '#e0eafc'], // Light gray to blue to light blue
+        ['#8e2de2', '#4a00e0', '#8e2de2'], // Purple to deep blue to purple
+        ['#d6a4a1', '#e5b6d2', '#f4d1f9'], // Light coral to light pink to lavender
+        ['#f39c12', '#e74c3c', '#9b59b6'], // Orange to red to purple
+        ['#16a085', '#1f8a70', '#1f8a70'], // Teal to dark teal
+        ['#f2d032', '#f87f3e', '#e74c3c'], // Yellow to orange to red
+        ['#3498db', '#2ecc71', '#e74c3c'], // Blue to green to red
+        ['#ff6f61', '#d7d1d0', '#ff9a8b'], // Coral to light gray to pink
+        ['#1e90ff', '#ff6347', '#ff4500'], // Blue to tomato to orange red
+        ['#fa7f6f', '#f08d59', '#d6d4f0'], // Light coral to orange to lavender
+        ['#4a90e2', '#50e3c2', '#b8e986'], // Blue to teal to green
+        ['#e67e22', '#f39c12', '#d35400'], // Orange to yellow to dark orange
+        ['#bdc3c7', '#2c3e50', '#34495e'], // Gray to dark blue to dark gray
+        ['#2980b9', '#8e44ad', '#e74c3c'], // Blue to purple to red
+        ['#ff6b6b', '#f9cb40', '#2e86de'], // Red to yellow to blue
+        ['#6a89cc', '#b8e994', '#ffb142'], // Blue to green to orange
+        ['#ffb6b9', '#fae3d9', '#bbded6'], // Light pink to cream to mint
+        ['#e84393', '#d63031', '#ff7675'], // Pink to red to coral
+        ['#ffbe76', '#ff8c94', '#ff6f61'], // Orange to pink to coral
+        ['#f0f0f0', '#f4f4f4', '#d9d9d9'], // Light gray shades
+        ['#e67e22', '#f39c12', '#e74c3c'], // Orange to yellow to red
+        ['#2ecc71', '#16a085', '#27ae60'], // Green shades
+        ['#7f8c8d', '#95a5a6', '#bdc3c7'], // Gray shades
+        ['#ff8c00', '#ff6347', '#e74c3c'], // Orange to tomato to red
+        ['#ff6f61', '#f9cb40', '#2e86de'], // Coral to yellow to blue
+        ['#d3d3d3', '#a9a9a9', '#808080'], // Light gray to dark gray shades
+        ['#ff79c6', '#bd93f9', '#ff5555'], // Pink to purple to red
+        ['#00bfae', '#00e676', '#b2ff59'], // Teal to green to lime
+        ['#c4e538', '#4b9cd3', '#f6e6e8'], // Light green to blue to pink
+        ['#ff9f00', '#ff6f00', '#d9534f'], // Yellow to orange to red
+        ['#c4e538', '#39b54a', '#0079bf'], // Lime to green to blue
+        ['#f5a623', '#f76c6c', '#d9534f'], // Orange to red to dark red
+        ['#ee4d4d', '#f8b400', '#e77f7f'], // Red to orange to light red
+        ['#3498db', '#2ecc71', '#e74c3c'], // Blue to green to red
+        ['#e84393', '#d63031', '#ff7675'], // Pink to red to coral
+        ['#ffb6b9', '#fae3d9', '#bbded6'], // Light pink to cream to mint
+        ['#f6e58d', '#ffbe76', '#f0932b'], // Light yellow to orange to deep orange
+        ['#55efc4', '#00b894', '#00cec9'], // Light teal to teal to cyan
+        ['#ff6f61', '#f9cb40', '#2e86de'], // Coral to yellow to blue
+        ['#ff6f61', '#d7d1d0', '#ff9a8b'], // Coral to light gray to pink
+        ['#74b9ff', '#a29bfe', '#dfe6e9'], // Light blue to purple to gray
+        ['#c0392b', '#e74c3c', '#ff6f61'], // Dark red to red to coral
+        ['#ff7675', '#d63031', '#e84393'], // Coral to red to pink
+        ['#f1c40f', '#e67e22', '#d35400'], // Yellow to orange to dark orange
+        ['#2ecc71', '#27ae60', '#16a085'], // Green shades
+        ['#ff9f00', '#ff6f00', '#d9534f'], // Orange to dark orange to red
+        ['#f5a623', '#f76c6c', '#d9534f'], // Orange to red to dark red
+        ['#9b59b6', '#8e44ad', '#6c5ce7'], // Purple shades
+        ['#d5dbdb', '#f5f5f5', '#e0e0e0'], // Light gray shades
+        ['#48dbfb', '#1dd1a1', '#feca57'], // Light blue to green to yellow
+        ['#f79c42', '#e67e22', '#d35400'], // Orange to dark orange to brown
+        ['#e84393', '#d63031', '#ff7675'], // Pink to red to coral
+        ['#f8c291', '#e55039', '#d6323e'], // Light orange to dark orange to red
+        ['#ffbe76', '#ff8c94', '#ff6f61'], // Orange to pink to coral
+        ['#ff9a8b', '#ff6a88', '#ff99ac'], // Light pink to coral to pastel pink
+        ['#e84393', '#d63031', '#ff7675'], // Pink to red to coral
+        ['#ffb6b9', '#fae3d9', '#bbded6'], // Light pink to cream to mint
+        ['#a29bfe', '#6c5ce7', '#00cec9'], // Purple to blue to cyan
+        ['#f6e58d', '#ffbe76', '#f0932b'], // Light yellow to orange to deep orange
+        ['#00b894', '#00cec9', '#55efc4'], // Teal to cyan to light teal
+        ['#d4a5a5', '#e9d9d9', '#f3a5a5'], // Coral to light pink to pastel coral
     ];
 
     const randomIndex = Math.floor(Math.random() * gradients.length);
