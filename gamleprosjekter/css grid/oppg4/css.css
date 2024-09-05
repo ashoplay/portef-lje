@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
+  grid-template-columns:20% 20% 20% 20% 20%;
+}
+.item1 {
+  grid-row: span 2;
+  grid-column: span 3;
+  background-color: purple;
+}
+.item2 {
+  grid-row: span 1;
+  grid-column: span 2;
+  background-color: white;
+}
+.item3 {
+  grid-row: span 1;
+  grid-column: span 2;
+  background-color: pink;
+
+}
+.item4 {
+  grid-row: span 3;
+  grid-column: span 2;
+  background-color: white;
+}
+.item5 {
+  grid-row: span 3;
+  grid-column: span 3;
+  background-color: black;
+}

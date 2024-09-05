@@ -1,0 +1,56 @@
+@font-face {
+    font-family: Pixelify Sans;
+    src: url(../font/PixelifySans-Regular.ttf);
+    font-family: Crimson Text;
+    src: url(../font/CrimsonText-Italic.ttf);
+}
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding-top: 50px;
+    font-size: 40px;
+}
+li{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 35px;
+}
+img {
+    list-style-type: none;
+    float: right;
+    padding-right: 15%;
+    margin-top: 1%;
+    width: 28%;
+}
+a {
+    text-decoration: none;
+    color: #00ffff;
+}
+body {
+    background: #012aa4;
+    font-family: "Pixelify Sans", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00FFFF;
+}
+div {
+   color: #00FFFF; 
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; 
+    margin-top: 3.2%;
+  }
+  
+.text-with-background {
+ background-color: #0137da; 
+ padding: 20px; 
+ color: white; 
+ display: inline-block;
+ max-width: 30%; 
+ margin-left: 45%;
+ margin-top: 2%;
+ text-align: center;
+}
+  

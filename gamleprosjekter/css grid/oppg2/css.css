@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
+  grid-template-columns:20% 20% 20% 20% 20%;
+}
+.item1 {
+  grid-row: span 2;
+  grid-column: span 4;
+}
+.item2 {
+  grid-row: span 5;
+  grid-column: span 1;
+}
+.item3 {
+  grid-row: span 3;
+  grid-column: span 2;
+
+}
+.item4 {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.item5 {
+  grid-row: span 1;
+  grid-column: span 6;
+}
