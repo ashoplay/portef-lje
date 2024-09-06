@@ -1,4 +1,4 @@
-function changeGradient() {
+
     const gradients = [
         ['red', 'purple', 'blue'], // Red to purple to blue
         ['#ff7e5f', '#feb47b', '#ff512f'], // Peach to pink to red
@@ -103,18 +103,76 @@ function changeGradient() {
         ['#d4a5a5', '#e9d9d9', '#f3a5a5'], // Coral to light pink to pastel coral
     ];
 
-    const randomIndex = Math.floor(Math.random() * gradients.length);
-    const [color1, color2, color3] = gradients[randomIndex];
+// Variables to track gradient indices
+let currentIndex = 0;
+let previousIndex = gradients.length - 1;  // Initialize to last gradient
+let nextIndex = 1;  // Next gradient in line
 
+// Function to apply a gradient based on index
+function applyGradient(index) {
+    const [color1, color2, color3] = gradients[index];
     const gradient = `linear-gradient(to bottom left, ${color1}, ${color2}, ${color3})`;
     document.body.style.background = gradient;
 
+    // Update localStorage
     localStorage.setItem('backgroundGradient', gradient);
+    localStorage.setItem('currentIndex', currentIndex);
 }
 
-window.onload = function() {
+// Function to load saved gradient and indices
+function loadSavedState() {
     const savedGradient = localStorage.getItem('backgroundGradient');
-    if (savedGradient) {
+    const savedIndex = localStorage.getItem('currentIndex');
+
+    if (savedGradient && savedIndex) {
         document.body.style.background = savedGradient;
+        currentIndex = parseInt(savedIndex, 10);
+        previousIndex = (currentIndex - 1 + gradients.length) % gradients.length;
+        nextIndex = (currentIndex + 1) % gradients.length;
     }
 }
+
+// Function to change to the next gradient
+function nextGradient() {
+    previousIndex = currentIndex;  // Move current to previous
+    currentIndex = nextIndex;  // Move next to current
+    nextIndex = (currentIndex + 1) % gradients.length;  // Calculate new next
+
+    applyGradient(currentIndex);
+}
+
+// Function to change to the previous gradient
+function previousGradient() {
+    nextIndex = currentIndex;  // Move current to next
+    currentIndex = previousIndex;  // Move previous to current
+    previousIndex = (currentIndex - 1 + gradients.length) % gradients.length;  // Calculate new previous
+
+    applyGradient(currentIndex);
+}
+
+// Load the saved gradient on page load
+window.onload = function() {
+    loadSavedState();
+};
+
+// Add hover effects for the next button
+const nextButton = document.querySelector('#nextGradientButton');
+nextButton.addEventListener('mouseover', function() {
+    const [color1, color2, color3] = gradients[nextIndex];
+    const hoverGradient = `linear-gradient(to bottom left, ${color1}, ${color2}, ${color3})`;
+    nextButton.style.background = hoverGradient;
+});
+nextButton.addEventListener('mouseleave', function() {
+    nextButton.style.background = '';  // Revert to default background
+});
+
+// Add hover effects for the previous button
+const prevButton = document.querySelector('#prevGradientButton');
+prevButton.addEventListener('mouseover', function() {
+    const [color1, color2, color3] = gradients[previousIndex];
+    const hoverGradient = `linear-gradient(to bottom left, ${color1}, ${color2}, ${color3})`;
+    prevButton.style.background = hoverGradient;
+});
+prevButton.addEventListener('mouseleave', function() {
+    prevButton.style.background = '';  // Revert to default background
+});
