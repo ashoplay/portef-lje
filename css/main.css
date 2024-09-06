@@ -22,11 +22,11 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 15px 20px;
-    background-color: rgba(112, 145, 230, 0.85);
+    background-color: rgba(34, 193, 195, 0.9); /* Updated nav color */
     display: flex;
     justify-content: space-evenly;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -46,9 +46,9 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #8697ca;
+    background-color: #0288d1; /* Updated hover color */
     color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* CONTENT STYLING */
@@ -60,7 +60,7 @@ nav li a:hover {
     flex-grow: 1;
     text-align: center;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6); /* White, slightly see-through background */
     border-radius: 8px;
     margin: 40px auto;
     width: 90%;
@@ -68,9 +68,40 @@ nav li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-p {
+.content p {
     font-size: 24px;
     color: #333;
+}
+
+/* PROJECTS STYLING */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.9); /* Slightly see-through background for project cards */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card a {
+    display: block;
+    color: #0288d1; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+    color: #0056b3; /* Link hover color */
+    text-decoration: underline;
 }
 
 /* BUTTON STYLING */
@@ -79,7 +110,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     background-color: #fff;
-    border: 2px solid #7091e6;
+    border: 2px solid #0288d1; /* Updated button border color */
     border-radius: 5px;
     color: #333;
     margin-top: 20px;
@@ -89,17 +120,18 @@ button {
 
 button:hover {
     color: white;
+    background-color: #0288d1; /* Updated button hover background color */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* FOOTER STYLING */
 footer {
-    background-color: #7091e6;
+    background-color: #0288d1; /* Updated footer color */
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: auto;
-    border-top: 1px solid #8697ca;
+    border-top: 1px solid #0277bd;
     font-size: 14px;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -149,13 +181,8 @@ footer {
         padding: 10px;
     }
 
-    p {
-        font-size: 20px; /* Reduce paragraph font size */
-    }
-
-    footer {
-        padding: 8px 0;
-        font-size: 12px;
+    .content p {
+        font-size: 20px; /* Adjust font size for smaller screens */
     }
 }
 
@@ -166,16 +193,10 @@ footer {
     }
 
     .content {
-        width: 100%;
         padding: 10px;
     }
 
-    p {
-        font-size: 18px;
-    }
-
-    footer {
-        padding: 5px 0;
-        font-size: 10px;
+    .content p {
+        font-size: 18px; /* Adjust font size further for very small screens */
     }
 }
